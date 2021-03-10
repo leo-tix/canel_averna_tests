@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      :root {
+        --poly-gauche: polygon(0px 0px, 100% 0px, 50% 50%, 100% 100%, 0px 100%);
+        --poly-droite: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%, 50% 50%);
+      }
+
+      .poly {
+        position: relative;
+        width: 50vw;
+        height: 200vh;
+      }
+
+      .poly p {
+        text-align: justify;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -o-hyphens: auto;
+        hyphens: auto;
+      }
+
+      .poly::before {
+        background-color: blue;
+        shape-outside: polygon(0px 0px, 100% 0px, 50% 50%, 100% 100%, 0px 100%);
+        shape-outside: var(--poly-gauche);
+        /*shape-outside: polygon(0px 0px, 100% 0px, 50% 50%, 100% 100%, 0px 100%);*/
+        float: left;
+        content: "";
+        height: 200vh;
+        width: 50%;
+      }
+
+      .poly p::before {
+        background-color: green;
+        /*shape-outside: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%, 50% 50%);*/
+        shape-outside: var(--poly-droite);
+        float: right;
+        content: "";
+        height: 200vh;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="poly">
+      <p class="poly-text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+        nam accusantium sunt id necessitatibus, voluptatem illum dolore
+        provident ullam beatae quam, dignissimos repudiandae, quo corrupti ab
+        quis? Quod pariatur fuga, aperiam excepturi commodi quaerat odio fugit
+        repellat nisi aliquid voluptas a impedit harum, ea facere. Officia
+        commodi, ex inventore expedita ea pariatur, asperiores facere esse
+        facilis magni vel veritatis modi at voluptas explicabo fugit libero
+        delectus laudantium illum? Provident modi ullam error doloribus et
+        deserunt minus numquam corrupti aliquid, id facilis fugit hic distinctio
+        molestias illo tenetur quae ratione. Quibusdam ipsum ipsa, placeat
+        soluta perferendis magnam amet, temporibus laborum eveniet a quae,
+        voluptatem harum corporis eos impedit in inventore dolore excepturi
+        molestias? Odio enim, earum expedita vero voluptate id alias iste et
+        culpa ullam placeat, praesentium sapiente nisi eligendi eos dolores a
+        iusto quae, debitis ut quam! Architecto reprehenderit ab, iusto
+        laboriosam laudantium fugiat! Inventore accusantium dolor cupiditate
+        magnam veritatis aspernatur fuga non architecto, molestias quia
+        laboriosam, dicta sit officia doloribus quasi doloremque suscipit ex
+        expedita accusamus quisquam quam impedit minus. Tempora at nesciunt vel
+        illum qui molestias quisquam, expedita sint vitae consequuntur, soluta
+        ut veniam iste placeat exercitationem delectus esse aut amet? Numquam
+        harum odit quisquam, commodi aliquam atque? In, molestias. Temporibus
+        atque facilis adipisci odit optio autem accusamus voluptatum. Aliquid
+        quasi placeat itaque vero! Pariatur possimus laborum quasi, repellendus
+        laboriosam animi rem quo amet eaque totam quidem incidunt obcaecati
+        aliquam ea maxime inventore odit. Nostrum atque in eaque! Architecto a
+        ipsa deserunt aliquam quisquam sed? Expedita cupiditate non numquam.
+        Ducimus qui asperiores, aut amet tempore dolor, magni praesentium,
+        repellat aspernatur doloremque harum perferendis? Beatae ad rerum eum
+        nisi numquam eius eaque quam explicabo velit magnam quae accusamus autem
+        dolor placeat amet sint perferendis, delectus unde veniam quisquam porro
+        deleniti quod illum. Exercitationem necessitatibus, itaque esse harum,
+        culpa corrupti modi corporis saepe porro consequuntur tempora minima,
+        numquam neque impedit dolorem! Dolores cumque quos nemo unde quisquam
+        enim, rerum quia consectetur doloremque ipsum omnis rem autem excepturi
+        dolore eum illo sint? Sunt impedit possimus quaerat sed enim
+        exercitationem incidunt esse quia suscipit facere perspiciatis
+        voluptates ratione blanditiis pariatur, eius quam neque expedita et?
+        Harum recusandae blanditiis debitis enim animi aut cupiditate
+        consequuntur dolorum, expedita consectetur maiores commodi assumenda
+        ipsum sint nesciunt architecto praesentium facere delectus ab impedit!
+        Assumenda consequuntur suscipit harum, quasi soluta nobis voluptate
+        velit sunt tempore, accusantium, consequatur saepe tenetur voluptas.
+        Ratione temporibus veniam, autem iusto inventore deleniti molestiae
+        voluptatem illum numquam doloremque animi quae minima, cum eum aliquam
+        rem corrupti, reprehenderit eveniet quas doloribus! Maiores dolorem
+        culpa deleniti. Blanditiis rerum inventore vitae tempore consectetur
+        rem, suscipit amet cupiditate dolores ut veritatis! Nobis ducimus modi
+        aspernatur ad corporis voluptas recusandae qui odit sapiente minima
+        aperiam exercitationem velit obcaecati, nam quae, earum quidem enim
+        reiciendis expedita? Ratione aperiam aspernatur magnam, illum delectus
+        quos necessitatibus adipisci numquam iure tenetur libero dolor ipsum
+        quae modi voluptatum vitae ab repellendus exercitationem similique
+        labore pariatur explicabo! Odio ipsam odit corrupti qui, non facere
+        voluptatum repellendus alias, repudiandae et magni, deleniti accusantium
+        nam necessitatibus! Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Consectetur nam accusantium sunt id necessitatibus, voluptatem
+        illum dolore provident ullam beatae quam, dignissimos repudiandae, quo
+        corrupti ab quis? Quod pariatur fuga, aperiam excepturi commodi quaerat
+        odio fugit repellat nisi aliquid voluptas a impedit harum, ea facere.
+        Officia commodi, ex inventore expedita ea pariatur, asperiores facere
+        esse facilis magni vel veritatis modi at voluptas explicabo fugit libero
+        delectus laudantium illum? Provident modi ullam error doloribus et
+        deserunt minus numquam corrupti aliquid, id facilis fugit hic distinctio
+        molestias illo tenetur quae ratione. Quibusdam ipsum ipsa, placeat
+        soluta perferendis magnam amet, temporibus laborum eveniet a quae,
+        voluptatem harum corporis eos impedit in inventore dolore excepturi
+        molestias? Odio enim, earum expedita vero voluptate id alias iste et
+        culpa ullam placeat, praesentium sapiente nisi eligendi eos dolores a
+        iusto quae, debitis ut quam! Architecto reprehenderit ab, iusto
+        laboriosam laudantium fugiat! Inventore accusantium dolor cupiditate
+        magnam veritatis aspernatur fuga non architecto, molestias quia
+        laboriosam, dicta sit officia doloribus quasi doloremque suscipit ex
+        expedita accusamus quisquam quam impedit minus. Tempora at nesciunt vel
+        illum qui molestias quisquam, expedita sint vitae consequuntur, soluta
+        ut veniam iste placeat exercitationem delectus esse aut amet? Numquam
+        harum odit quisquam, commodi aliquam atque? In, molestias. Temporibus
+        atque facilis adipisci odit optio autem accusamus voluptatum. Aliquid
+        quasi placeat itaque vero! Pariatur possimus laborum quasi, repellendus
+        laboriosam animi rem quo amet eaque totam quidem incidunt obcaecati
+        aliquam ea maxime inventore odit. Nostrum atque in eaque! Architecto a
+        ipsa deserunt aliquam quisquam sed? Expedita cupiditate non numquam.
+        Ducimus qui asperiores, aut amet tempore dolor, magni praesentium,
+        repellat aspernatur doloremque harum perferendis? Beatae ad rerum eum
+        nisi numquam eius eaque quam explicabo velit magnam quae accusamus autem
+        dolor placeat amet sint perferendis, delectus unde veniam quisquam porro
+        deleniti quod illum. Exercitationem necessitatibus, itaque esse harum,
+        culpa corrupti modi corporis saepe porro consequuntur tempora minima,
+        numquam neque impedit dolorem! Dolores cumque quos nemo unde quisquam
+        enim, rerum quia consectetur doloremque ipsum omnis rem autem excepturi
+        dolore eum illo sint? Sunt impedit possimus quaerat sed enim
+        exercitationem incidunt esse quia suscipit facere perspiciatis
+        voluptates ratione blanditiis pariatur, eius quam neque expedita et?
+        Harum recusandae blanditiis debitis enim animi aut cupiditate
+        consequuntur dolorum, expedita consectetur maiores commodi assumenda
+        ipsum sint nesciunt architecto praesentium facere delectus ab impedit!
+        Assumenda consequuntur suscipit harum, quasi soluta nobis voluptate
+        velit sunt tempore, accusantium, consequatur saepe tenetur voluptas.
+        Ratione temporibus veniam, autem iusto inventore deleniti molestiae
+        voluptatem illum numquam doloremque animi quae minima, cum eum aliquam
+        rem corrupti, reprehenderit eveniet quas doloribus! Maiores dolorem
+        culpa deleniti. Blanditiis rerum inventore vitae tempore consectetur
+        rem, suscipit amet cupiditate dolores ut veritatis! Nobis ducimus modi
+        aspernatur ad corporis voluptas recusandae qui odit sapiente minima
+        aperiam exercitationem velit obcaecati, nam quae, earum quidem enim
+        reiciendis expedita? Ratione aperiam aspernatur magnam, illum delectus
+        quos necessitatibus adipisci numquam iure tenetur libero dolor ipsum
+        quae modi voluptatum vitae ab repellendus exercitationem similique
+        labore pariatur explicabo! Odio ipsam odit corrupti qui, non facere
+        voluptatum repellendus alias, repudiandae et magni, deleniti accusantium
+        nam necessitatibus!
+      </p>
+    </div>
+    <script>
+      //Stocke les div
+      var container = document.querySelector(".poly");
+      var text = document.querySelector(".poly-text");
+
+      //Style du container
+      var styleBeforeGauche = container.style;
+      var styleBeforeDroite = text.style;
+
+      var tabValueGauche = [];
+      var interval = 10;
+
+      makePolygonGauche();
+      makePolygonDroite();
+
+      function makePolygonGauche() {
+        //Begin polygon
+        var polygonGauche = "polygon(0px 0px,";
+
+        //pour chaque interval calcule une valeur aléatoire en x et l'ajoute au style du polygone
+        for (var i = 0; i <= interval; i++) {
+          var randValue = Math.round(Math.random() * 100);
+
+          tabValueGauche.push(randValue);
+
+          polygonGauche += randValue + "% ";
+
+          polygonGauche += (100 / interval) * i + "%,";
+        }
+
+        polygonGauche += "0px 100%)";
+
+        //Applique le style à gauche
+        styleBeforeGauche.setProperty("--poly-gauche", polygonGauche);
+      }
+
+      function makePolygonDroite() {
+        var polygonDroite = "polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%,";
+
+        for (var i = 0; i < interval; i++) {
+          // var inverseValue = tabValueGauche[(tabValueGauche.length-1)-i];
+          var inverseValue = tabValueGauche[tabValueGauche.length - 1 - i];
+
+          polygonDroite += inverseValue + "% ";
+
+          if (i == interval - 1) {
+            polygonDroite += 100 - (100 / interval) * i + "%";
+          } else {
+            polygonDroite += 100 - (100 / interval) * i + "%,";
+          }
+        }
+
+        polygonDroite += ")";
+        styleBeforeDroite.setProperty("--poly-droite", polygonDroite);
+      }
+    </script>
+  </body>
+</html>
